@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(235, 226, 226);
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(51, 51, 51);
+    z-index: 1; /* Layer */
+}
+
+.grid_layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+p {
+    color: rgb(51, 51, 51);
+    font-family: "Source Serif Pro", serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    grid-column: 2 / span 2;
+}
+
+.Right_content {
+    grid-column: 4 / span 1;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    margin-right: 60px;
+}
+
+.custom-link {
+    color: #006D77; /* Change the color of the link */
+}
+
+
+.Photo {
+    grid-column: 2 / span 2;
+ 
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    position: fixed; 
+    top: 30px; 
+    right: 40px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Source Serif Pro", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+#Page_1,
+#Page_2,
+#Page_3 {
+    color:  rgb(235, 226, 226);
+    text-decoration: none;
+}
+
+#Page_1:hover,
+#Page_2:hover,
+#Page_3:hover {
+    text-decoration: underline;
+}
+
+#Main_Title, #Main_Subtitle, #Date_and_Names {
+    display: block;
+    margin-top: 100px; /* Margine superiore auto */
+    margin-bottom: 100px auto; /* Margine inferiore auto */
+    width: 700px;
+    text-align: center;
+}
+
+#Main_Title {
+    color: rgb(51, 51, 51);
+    font-family: "Source Serif Pro", serif;
+    font-size: 40px;
+    font-weight: 600;
+    height: auto;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.Main_content{
+    grid-column: 2 / span 2;
+}
+
+#Main_Subtitle{
+    color: rgb(51, 51, 51);
+    font-family: "Source Serif Pro", serif;
+    font-size: 24px;
+    font-weight: 150;
+    height: auto;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#Date_and_Names {
+    color: rgb(102, 102, 102);
+    font-family: "OfficeCodeProWeb", monospace;
+    font-size: 12px;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: -0.8px;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+p {
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: "Source Serif Pro", serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    width: 700px;
+}
+
+#footer_banner {
+    background-color: #333;
+    color: #606060;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%; /* Make it span the full width */
+}
+#UNILogo {
+    width: 200px;
+    height: 80px;
+    background-size: contain; /* Assicura che l'immagine venga visualizzata interamente */
+    background-repeat: no-repeat;
+    background-position: center left; /* Centra l'immagine orizzontalmente */
+    background-image: url('images/UNILogo.jpg');
+}

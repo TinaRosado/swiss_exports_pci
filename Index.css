@@ -1,0 +1,351 @@
+body {
+    background-color: rgb(235, 226, 226);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: rgb(51, 51, 51);
+    font-family: "Source Serif Pro", serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.custom-link {
+    color: #006D77; /* Change the color of the link */
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(51, 51, 51);
+    z-index: 1; /* Layer */
+}
+
+#header_1 {
+    position: relative;
+    height: 550px;
+    margin-bottom: 50px;
+    padding: 0;
+    overflow: hidden; /* Hide overflow from the video */
+}
+
+#header_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire header */
+    z-index: -1; /* Ensure the video stays behind the content */
+    object-fit: cover;
+    /*opacity: 0.25;*/
+}
+
+#title_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(235, 226, 226, 0.8); /* Colore di sfondo con opacità */
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav {
+    position: fixed; 
+    top: 30px; 
+    right: 40px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Source Serif Pro", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+#Page_1,
+#Page_2,
+#Page_3 {
+    color:  rgb(235, 226, 226);
+    text-decoration: none;
+}
+
+#Page_1:hover,
+#Page_2:hover,
+#Page_3:hover {
+    text-decoration: underline;
+}
+
+.grid_layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Main_content{
+    grid-column: 2 / span 2;
+}
+
+.Main_content_3{
+    grid-column: 1 / span 2;
+}
+
+.Main_content_4{
+    grid-column: 3 / span 2;
+}
+
+.Right_content {
+    grid-column: 4 / span 1;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    margin-right: 60px;
+}
+
+.Special_content {
+    grid-column: 2 / span 3; /* Start from the second column and span to the last column */
+}
+
+#Main_Title, #Main_Subtitle, #Date_and_Names {
+    text-align: center;
+}
+
+#Main_Title {
+    color: rgb(51, 51, 51);
+    font-family: "Source Serif Pro", serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#Main_Subtitle{
+    color: rgb(51, 51, 51);
+    font-family: "Source Serif Pro", serif;
+    font-size: 24px;
+    font-weight: 150;
+}
+
+#Main_Subtitle_2{
+    grid-column: 1 / span 2;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-family: "Source Serif Pro", serif;
+    font-size: 24px;
+    font-weight: 150;
+}
+
+#Main_Subtitle_3{
+    grid-column: 3 / span 2;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-family: "Source Serif Pro", serif;
+    font-size: 24px;
+    font-weight: 150;
+}
+
+#Date_and_Names {
+    grid-column: 2/ span 2;
+    color: rgb(102, 102, 102);
+    font-family: "OfficeCodeProWeb", monospace;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+.meta_text{
+    color: rgb(161, 159, 159);
+    font-family: "Source Serif Pro", serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    /*margin-bottom: 5px;*/
+    grid-column: 1 / span 1;
+    text-align: right;
+}
+
+.Label_container {
+    grid-column: 1 / span 1; /* Place in the first column */
+    position: relative; /* Permette il posizionamento relativo degli elementi figlio */
+}
+
+#label_G1 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 5px;
+    
+}
+
+#label_G2 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 70px;
+    
+}
+
+#label_G3 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 130px;
+    
+}
+
+#label_G4 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 185px;
+    
+}
+
+#label_G5 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 245px;
+    
+}
+
+#label_G6 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 310px;
+    
+}
+
+#label_G7 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 370px;
+    
+}
+
+#label_G8 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 430px;
+    
+}
+
+#label_G9 {
+    position: absolute; 
+    right: 0;
+    font-family: "Source Serif Pro", serif; 
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    top: 490px;
+    
+}
+
+#more_complex_label {
+    position: absolute; /* Posiziona in modo assoluto all'interno del contenitore */
+    top: 20px; /* Posiziona all'estremità superiore del contenitore */
+    right: 0; /* Posiziona all'estremità destra del contenitore */
+    font-family: "Source Serif Pro", serif; /* Match font family */
+    font-size: 12px; /* Match font size with x-axis years */
+    color: rgb(51, 51, 51); /* Match color */
+}
+
+#less_complex_label {
+    position: absolute; /* Posiziona in modo assoluto all'interno del contenitore */
+    bottom: 35px; /* Posiziona all'estremità inferiore del contenitore */
+    right: 0; /* Posiziona all'estremità sinistra del contenitore */
+    font-family: "Source Serif Pro", serif; /* Match font family */
+    font-size: 12px; /* Match font size with x-axis years */
+    color: rgb(51, 51, 51); /* Match color */
+}
+
+.Toolbox{
+    grid-column: 4 / span 1;
+    font-size: 12px;
+    color: rgb(51, 51, 51); 
+}
+
+.Toolbox_2{
+    grid-column: 2;
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    text-align: right;
+}
+
+.Toolbox_3{
+    grid-column: 4;
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    text-align: right;
+}
+
+#Filter {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.foot_banner {
+    background-color: #333;
+    color: #606060;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centra verticalmente gli elementi */
+}
+
+#UNILogo {
+    width: 200px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('images/UNILogo.jpg');
+}
+
+.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 8px;
+    font: 8px "Source Serif Pro", serif;
+    background:  rgb(235, 226, 226);
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0; 
+}
+
