@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project: Switserland Exports Study</title>
+    <link rel="stylesheet" href="Index.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <div id="banner"></div> 
+    <div id='header_1'>
+        <nav>
+            <ul>
+                <li><a id="Page_1" href="Index.html">Home</a></li>
+                <li><a id="Page_2" href="About_Us.html">About Us</a></li>
+                <li><a id="Page_3" href="Data.html">The Research</a></li>
+            </ul>
+        </nav>
+        <video id="header_video" autoplay muted loop>
+            <source src="MyMovie.mp4" type="video/mp4">
+        </video>
+        <div id="title_overlay">
+            <h1 id="Main_Title">Exploring Swiss Export<br>Economic Complexity</h1>
+            <h2 id="Main_Subtitle"><i> A Data Visualization Study for Unveiling<br>Economic Dynamics and New Growth Opportunities</i></h2>
+        </div>
+    </div>
+    <section class="grid_layout">
+        <div class="Main_content">
+            <p id="Date_and_Names"> Spring 2024<br> Analysis, Design and Visualizations: Tina Rosado & Jacopo M. Conti<br> Supervisor: Prof. Nil Tuzcu (Northeastern University, Harvard Growth Lab)</p>
+        </div>
+    </section>
+    <section class="grid_layout">
+        <div class="meta_text">
+            <p>Introduction</p>
+        </div>
+        <div class="Main_content">
+            <p>Switzerland is a high-income country, ranking as the world's second wealthiest nation per capita among 133 countries surveyed. With a population of 8.7 million, its GDP per capita reaches a remarkable $91,991. Over the past five years, its GDP per capita growth has averaged a steady 0.6%<sup>[1]</sup>. Furthermore, according to analysis by the Harvard Growth Lab, Switzerland claims the second spot in the Economic Complexity Index<sup>[2]</sup> (ECI), a metric that assesses the diversity and intricacy of a country's export portfolio.</p>
+            <p>However, this commendable position has remained stagnant for a decade, coinciding with a decline in export diversification. The Swiss economy is anticipated to experience sluggish growth, with the Growth Lab's 2031 projections forecasting an annual growth rate of 2.1% over the next decade, positioning Switzerland in the lower echelons globally.</p>
+            <p>This analysis underscores the complexity of the Swiss economy and its historical development, particularly focusing on the intricacies across various industries. Through compelling data visualization narratives, our research aims to provide a nuanced understanding of Switzerland's economic landscape, facilitating exploration by diverse stakeholders. Such insights could inform policy decisions that shape the future trajectory of this nation.</p>
+        </div>
+        <div class="Right_content">
+            <div style="height: 100px;"></div>
+            <text><sup>[1]</sup> Information from <a href="https://atlas.cid.harvard.edu/countries/41" class="custom-link">Atlas of Economic Complexity</a> (Harvard Growth Lab)</text>
+            <div style="height: 20px;"></div>
+            <text><sup>[2]</sup> <i>Economic Complexity Index</i> (ECI): a rank of countries based on how diversified and complex their export basket is. Countries that are home to a great diversity of productive know-how, particularly complex specialized know-how, are able to produce a great diversity of sophisticated products.</text>
+            <div style="height: 10px;"></div>
+            <text>The complexity of a country’s exports is found to highly predict current income levels, or where complexity exceed expectations for a country’s income level, the country is predicted to experience more rapid growth in the future. ECI therefore provides a useful measure of economic development.</text>
+        </div>    
+    </section>
+    <section style="height: 50px;"></section>
+    <section>
+        <div>
+            <h2 id="Main_Subtitle">Switzerland Exports by Industry</h2>
+        </div>
+    </section>
+    <section class="grid_layout">
+        <p class="Main_content">
+            A comprehensive historical examination of the Swiss economy is essential for discerning sectoral trends, extracting valuable insights, and facilitating analysis of projections and conjectures. Of particular significance is the attention paid to the fluctuations within the economic landscape, the variability of products, and their corresponding revenues. Essentially, this approach facilitates a thorough assessment of the nation's economic prowess over time. Such an overview serves as a cornerstone for identifying both leading and lagging industries, enabling strategic decision-making and the formulation of policies for both industries and governance.
+        </p>
+    </section>
+    <section class="grid_layout">
+        <div class="Label_container">
+            <p id="label_G1">Vehicles</p>
+            <p id="label_G2">Electronics</p>
+            <p id="label_G3">Machinery</p>
+            <p id="label_G4">Metals</p>
+            <p id="label_G5">Stone</p>
+            <p id="label_G6">Textiles</p>
+            <p id="label_G7">Chemicals</p>
+            <p id="label_G8">Minerals</p>
+            <p id="label_G9">Agriculture</p>
+        </div>
+        <div id="graphSectors" class="Special_content">
+        </div>
+    </section>
+    <section class="grid_layout">
+        <p class="Main_content">
+            The visualization presented illustrates Switzerland's economy exports categorized by industry across time. Each circle represents a product category, with its size proportional to the trade value in dollars. From the visualization, it's evident that the stone, machinery, and chemicals industries are the leading sectors in the Swiss economy. Additionally, a closer examination reveals that the electronics industry has experienced growth across most of its product categories, whereas minerals witnessed a notable spike in value from 2002 to 2012. However, delving into the potential causes behind these trends is beyond the scope of this project.
+        </p>
+    </section>
+    <section style="height: 50px;"></section>
+    <section>
+        <div>
+            <h2 id="Main_Subtitle">Switzerland Exports by Product Complexity Index</h2>
+        </div>
+    </section>
+    <section class="grid_layout">
+        <div class="Main_content">
+            <p>The Growth Lab centers their analysis and projections on the idea that a country’s economic health relates to the industrial capabilities and knowhow of that country in relation to global trade and economic dynamics. Meaning that the more unique capabilities and knowhow the country develops, the more competitive its product space and stronger growth probability. They have developed various metrics that help to understand the intricate relationships between products, trade and economy. Two of those variables are the Revealed Comparative Advantage<sup>[3]</sup> (RCA) and the Product Complexity Index<sup>[4]</sup> (PCI).</p>
+            <p> The RCA is a measure that helps determine if a country is a strong exporter of a specific product. An RCA of 1 or above means that the country is a competitive player in the global trade of that product. While one country can have and RCA above 1 for one product, another country can have an RCA lower than 1 for the same product.</p>
+            <p>In the other hand, the PCI is a measure of a product which ranks the product from two perspectives, how diverse or unique a product is and the level of sophistication of know-how required to produce it. Products with higher PCI are relative more complex than other products. PCI is a rank given to a particular product and doesn’t not vary from country to country.</p>
+            <p>These two measures are important because they allow us to filter and view the products in the context of the global market. First understanding how the exports rank in terms of complexity (PCI) and secondly, if they have participated competitively in the global market (RCA). Finally, being able to view them by industry allows for a closer look at the progress and state of each industry.</p>
+        </div>
+        <div class="Right_content">
+            <div style="height: 175px;"></div>
+            <text><sup>[3]</sup> <i>Revealed Comparative Advantage</i> (RCA): a measure of whether a country is an exporter of a product, based on the relative advantage or disadvantage a country has in the export of a certain good. We use Balassa’s definition, which says that a country is an effective exporter of a product if it exports more than its “fair share,” or a share that is at least equal to the share of total world trade that the product represents (RCA greater than 1).</text>
+            <div style="height: 10px;"></div>
+            <text><sup>[4]</sup> <i>Product Complexity Index</i> (PCI): ranks the diversity and sophistication of the productive know-how required to produce a product. PCI is calculated based on how many other countries can produce the product and the economic complexity of those countries. In effect, PCI captures the amount and sophistication of know-how required to produce a product.</text>
+        </div>  
+    </section>
+    <section class="grid_layout">
+        <div class="Label_container">
+            <div>
+                <text id="more_complex_label">More Complex</text> 
+                <text id="less_complex_label">Less Complex</text>
+            </div>
+        </div>
+        <div id="scatterplotAllExports" class="Main_content">
+            <script src="Index_allExports.js"></script>
+        </div>
+        <div class="Toolbox">
+            <text><b>Filter Products with RCA ≥ 1</b></text>
+            <input type="checkbox" id="filterToggle">
+            <p></p>
+            <text><b>Filter by Industry</b></text>
+            
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Agriculture" id="sectorCheckbox1">
+                <label class="form-check-label" for="sectorCheckbox1">Agriculture</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Minerals" id="sectorCheckbox2">
+                <label class="form-check-label" for="sectorCheckbox2">Minerals</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Chemicals" id="sectorCheckbox3">
+                <label class="form-check-label" for="sectorCheckbox3">Chemicals</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Textiles" id="sectorCheckbox4">
+                <label class="form-check-label" for="sectorCheckbox4">Textiles</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Stone" id="sectorCheckbox5">
+                <label class="form-check-label" for="sectorCheckbox5">Stone</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Metals" id="sectorCheckbox6">
+                <label class="form-check-label" for="sectorCheckbox6">Metals</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Machinery" id="sectorCheckbox7">
+                <label class="form-check-label" for="sectorCheckbox7">Machinery</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Electronics" id="sectorCheckbox8">
+                <label class="form-check-label" for="sectorCheckbox8">Electronics</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Vehicles" id="sectorCheckbox9">
+                <label class="form-check-label" for="sectorCheckbox9">Vehicles</label>
+            </div>
+        </div>
+    </section>
+    <section class="grid_layout">
+        <p class="Main_content">
+            By exploring the Swiss exports from this perspective, it becomes evident that the main industries have very distinct profiles in terms of product complexity. Therefore, let’s look closer at the chemicals and stone products exported by Switzerland since 1995.
+        </p>
+    </section>
+    <section class="grid_layout">
+            <h2 id="Main_Subtitle_2">Switzerland Chemical Exports by Product Complexity Index</h2>
+            <h2 id="Main_Subtitle_3">Switzerland Stone Exports by Product Complexity Index</h2>
+    </section>
+    <section class="grid_layout">
+        <div class="Toolbox_2">
+            <label id="Filter" for="filterToggle2">Filter Products with RCA ≥ 1</label>
+            <input type="checkbox" id="filterToggle2">
+        </div>
+        <div class="Toolbox_3">
+            <label id="Filter" for="filterToggle3">Filter Products with RCA ≥ 1</label>
+            <input type="checkbox" id="filterToggle3">
+        </div>
+    </section>
+    <section class="grid_layout">
+        <div id="scatterplotChemicals" class="Main_content_3">
+            <script src="Index_Chemicals.js"></script>
+        </div>
+        <div id="scatterplotStone" class="Main_content_4">
+            <script src="Index_Stone.js"></script>
+        </div>
+    </section>
+    <section class="grid_layout">
+        <div class="Main_content">
+            <p>Chemicals and stone represent two significant categories of Swiss exports. However, they demonstrate markedly different Product Complexity Index (PCI) profiles. Chemicals have shown an increase in the value attributed to various products, resulting in a high PCI. Conversely, the primary exported product within the stone industry, gold, exhibits a considerably lower PCI. Even within the stone industry, platinum, which boasts a high PCI, has experienced a decrease in complexity since 2008. Given this data, Switzerland could pursue diversification across its entire product portfolio to reduce reliance on low PCI products.</p>
+        </div>
+    </section>
+    <section style="height: 50px;"></section>
+    <section>
+        <div>
+            <h2 id="Main_Subtitle">Final Considerations</h2>
+        </div>
+    </section>
+    <section class="grid_layout">
+        <div class="Main_content">
+            <p>The present research delves into the intricacies of the Swiss economy, aiming to unravel the complexities surrounding product exports through a historical lens. This approach prompts reflection on the frontiers of economic growth, policy development, and collaboration with policymakers to formulate actionable strategies while fostering broader public awareness in the pursuit of inclusive prosperity.</p>
+            <p>Building upon the foundation laid by the Harvard Growth Lab's Atlas of Economic Complexity project, our examination of the Swiss economy emerges as a valuable tool, seamlessly integrating insightful data analysis, compelling narrative storytelling, and effective data visualization to comprehend economic dynamics and identify novel avenues for growth.</p>
+            <p>Guided by the Harvard Growth Lab's projections, our initial objective was to gain a deeper understanding of the composition of the Swiss economy. Through the utilization of economic tools like RCI and PCA, our analysis reveals that the Swiss economy is underpinned by three major industries: chemicals, stone, and minerals. Over time, the trade value of multiple prooducts has demonstrated an overall increase, indicative of Switzerland's competence and competitiveness in the global market.</p>
+            <p>These findings beckon further inquiry into the future potential of these industries and the Swiss economy at large. Will Switzerland capitalize on its accumulated expertise to further expand trade of high PCI products, or will stagnation impede progress? In terms of policy, will Switzerland diversify its PCI offerings or concentrate efforts to excel in specific industries? In conclusion, future analyses must delve deeper into the interplay between these factors and metrics such as GDP, labor and employment data, shedding light on the nuanced complexities of Switzerland's economic landscape.
+            </p>    
+            </div>
+    </section>
+    <section style="height: 50px;"></section>
+    <section class="foot_banner">
+        <div id="UNILogo"></div>
+    </section>
+    <script src="Index_Sectors.js"></script>
+    <div id="tooltip" class="tooltip"></div>
+</body>
+</html>
